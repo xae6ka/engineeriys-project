@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header ">
     <nav class="header__nav">
       
       <a href="#main" class="nav__link"> Главная </a>
