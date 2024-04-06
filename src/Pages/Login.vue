@@ -2,7 +2,7 @@
   <section class="main-lr">
     <div class="lr">
       <nav class="lr__nav">
-        <router-link class="nav__link active" to="/lr">Вход</router-link>
+        <router-link class="nav__link active" to="/login">Вход</router-link>
         <router-link class="nav__link" to="/reg">Регистрация</router-link>
       </nav>
 
@@ -10,8 +10,8 @@
         <h1 class="data__title">О, это снова ты?</h1>
         <p class="data__subtitle">Залетай!</p>
 
-        <input type="text" class="data__lr">
-        <input type="password" class="data__password">
+        <input placeholder="Логин" type="text" class="data__lr" />
+        <input placeholder="Пароль" type="password" class="data__password" />
 
         <button class="data__btn">Войти!</button>
         <a href="" class="data__zpassword">Тыкни, если забыл пароль</a>
@@ -19,17 +19,15 @@
 
       <footer class="lr__footer">
         <a href="/" class="footer__info">Канал создателя</a>
-        
-        <span class="footer__info"></span>
-        
+
+        <span class="footer__info">2023-2024</span>
+
         <a href="/" class="footer__info">Канал Разработчика</a>
       </footer>
     </div>
 
     <div class="image"></div>
   </section>
-
-  <router-link to="/">home</router-link>
 </template>
 
 <script>
