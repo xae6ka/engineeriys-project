@@ -7,6 +7,8 @@
 
   <Soon id="news" title="Новости скоро появятся!" />
 
+  <Download />
+
   <Footer />
 </template>
 
@@ -15,6 +17,7 @@ import Header from "../components/Header.vue";
 import Main from "../components/Main.vue";
 import Soon from "../components/Soon.vue";
 import Footer from "../components/Footer.vue";
+import Download from "../components/Download.vue";
 
 export default {
   name: "HomePage",
@@ -22,7 +25,8 @@ export default {
     Header,
     Main,
     Soon,
-    Footer
+    Footer,
+    Download,
   },
 };
 </script>

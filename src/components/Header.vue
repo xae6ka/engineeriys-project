@@ -9,8 +9,6 @@
       <a href="#news" class="nav__link"> Новости </a>
 
       <a href="#download" class="nav__link"> Скачать Лаунчер </a>
-
-      <a href="#contacts" class="nav__link"> Контакты </a>
     </nav>
 
     <RouterLink to="/profile" class="user">

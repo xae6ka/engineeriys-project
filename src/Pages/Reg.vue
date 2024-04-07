@@ -9,17 +9,17 @@
       </nav>
 
       <form class="lr__data">
-        <h1 class="data__title">О, это снова ты?</h1>
-        <p class="data__subtitle">Залетай!</p>
+        <h1 class="data__title">О, новенький?</h1>
+        <p class="data__subtitle">Регайся!</p>
 
         <input placeholder="Почта" type="text" class="data__lr" />
         <input placeholder="Логин" type="text" class="data__lr" />
         <input placeholder="Пароль" type="password" class="data__password" />
 
         <button class="data__btn">Зарегистрироваться!</button>
-        <router-link class="data__zpassword" to="/login"
-          >Есть аккаунт</router-link
-        >
+        <router-link class="data__zpassword" to="/login">
+          Есть аккаунт
+        </router-link>
       </form>
 
       <footer class="lr__footer">
