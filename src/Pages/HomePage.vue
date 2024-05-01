@@ -1,5 +1,5 @@
 <template>
-  <Header username="Еще не вошел :(" />
+  <Header />
 
   <Main id="main" />
 
@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
-import Main from "../components/Main.vue";
-import Soon from "../components/Soon.vue";
-import Footer from "../components/Footer.vue";
-import Download from "../components/Download.vue";
+import Header from '../components/Header.vue';
+import Main from '../components/Main.vue';
+import Soon from '../components/Soon.vue';
+import Footer from '../components/Footer.vue';
+import Download from '../components/Download.vue';
 
 export default {
-  name: "HomePage",
+  name: 'HomePage',
   components: {
     Header,
     Main,

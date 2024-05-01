@@ -1,4 +1,5 @@
-import { createApp } from "vue";
-import App, { router } from "./App.vue";
+import { createApp } from 'vue';
+import App, { router } from './App.vue';
+import Vue3Toastify from 'vue3-toastify';
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(Vue3Toastify).use(router).mount('#app');

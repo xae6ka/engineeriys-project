@@ -23,25 +23,38 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Profile",
+  name: 'Profile',
   data() {
     return {
-      name: "name",
+      name: 'name',
       id: 1,
-      status: "Не в бане",
-      mail: "vasyapypkin228@mail.ru",
+      status: 'Не в бане',
+      mail: 'vasyapypkin228@mail.ru',
     };
+  },
+  mounted() {
+    if (document.cookie) {
+      let cookieArr = document.cookie.split(';');
+
+      const userCookie = JSON.parse(cookieArr.reverse()[0]);
+
+      if (typeof userCookie == 'object') {
+        this.name = userCookie.login;
+        this.id = userCookie.id;
+        this.mail = userCookie.email;
+      }
+    }
   },
   methods: {
     hello() {
-      console.log("feee");
+      console.log('feee');
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-@import "../styles/colors.scss";
+@import '../styles/colors.scss';
 
 .profile {
   margin-top: 100px;
@@ -89,7 +102,7 @@ export default {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    
+
     .skin__image {
       background-color: #fff;
       border-radius: 20px;

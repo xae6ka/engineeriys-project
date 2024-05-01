@@ -1,7 +1,6 @@
 <template>
-  <header class="header ">
+  <header class="header">
     <nav class="header__nav">
-      
       <a href="#main" class="nav__link"> Главная </a>
 
       <a href="#shop" class="nav__link"> Магазин </a>
@@ -24,15 +23,28 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Header",
-  props: {
-    username: String,
+  name: 'Header',
+  data() {
+    return {
+      username: 'Еще не вошел :(',
+    };
+  },
+  mounted() {
+    console.log(document.cookie);
+    if (document.cookie) {
+      const cookieArr = document.cookie.split(';');
+      const userCookie = JSON.parse(cookieArr.reverse()[0]);
+
+      if (typeof userCookie == 'object') {
+        this.username = userCookie.login;
+      }
+    }
   },
 };
 </script>
 
 <style scoped lang="scss">
-@import "../styles/colors.scss";
+@import '../styles/colors.scss';
 
 .header {
   display: flex;
